@@ -30,7 +30,7 @@ public class Triangle
         return sideC;
     }
 
-    public float calculateTriangleHeight(float calculatedHeightSide)
+    public float getHeight(float calculatedHeightSide)
     {
         float semiperimeter = (sideA + sideB + sideC) / 2;
 
