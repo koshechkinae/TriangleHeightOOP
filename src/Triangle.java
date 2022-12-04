@@ -1,36 +1,47 @@
-public class Triangle
-{
+public class Triangle {
     private float sideA;
     private float sideB;
     private float sideC;
 
-    public Triangle(float sideA, float sideB, float sideC)
-    {
+    public Triangle(float sideA, float sideB, float sideC) {
         if ((sideA < 0) || (sideB < 0) || (sideC < 0)) throwSideLengthMustBePositive();
 
-        if ((sideA + sideB <= sideC) || (sideB + sideC <= sideA) || (sideC + sideA) <= sideB) throwTriangleDoesNotExist();
+        if ((sideA + sideB <= sideC) || (sideB + sideC <= sideA) || (sideC + sideA) <= sideB)
+            throwTriangleDoesNotExist();
 
         this.sideA = sideA;
         this.sideB = sideB;
         this.sideC = sideC;
     }
 
-    public float getSideA()
-    {
+    public float getSideA() {
         return sideA;
     }
 
-    public float getSideB()
-    {
+    public float getSideB() {
         return sideB;
     }
 
-    public float getSideC()
-    {
+    public float getSideC() {
         return sideC;
     }
 
-    public float getHeight(float calculatedHeightSide)
+    public float getHeightA()
+    {
+        return this.getHeight(sideA);
+    }
+
+    public float getHeightB()
+    {
+        return this.getHeight(sideB);
+    }
+
+    public float getHeightC()
+    {
+        return this.getHeight(sideC);
+    }
+
+    private float getHeight(float calculatedHeightSide)
     {
         float semiperimeter = (sideA + sideB + sideC) / 2;
 

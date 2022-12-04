@@ -30,9 +30,9 @@ public class Main
 
     private static void printHeightsOfTriangle(Triangle triangle)
     {
-        System.out.printf("Высота стороны A = %.2f\n", triangle.getHeight(triangle.getSideA()));
-        System.out.printf("Высота стороны B = %.2f\n", triangle.getHeight(triangle.getSideB()));
-        System.out.printf("Высота стороны C = %.2f\n", triangle.getHeight(triangle.getSideC()));
+        System.out.printf("Высота стороны A = %.2f\n", triangle.getHeightA());
+        System.out.printf("Высота стороны B = %.2f\n", triangle.getHeightB());
+        System.out.printf("Высота стороны C = %.2f\n", triangle.getHeightC());
 
     }
 }
